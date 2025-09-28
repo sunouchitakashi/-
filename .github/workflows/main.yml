@@ -6,7 +6,7 @@ name: Generate and Deploy Weather Map
 on:
   # 1. スケジュール実行：UTCの0時, 6時, 12時, 18時に実行 (日本時間では9時, 15時, 21時, 翌3時)
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */12 * * *'
   # 2. 手動実行：GitHubのActionsタブから手動で動かすことも可能にする
   workflow_dispatch:
 
